@@ -10,8 +10,8 @@ function getTextValueByID(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 }
-// common function for change botton color
-function changeBottonColorById(id){
+// common function for change button color
+function changeButtonColorById(id){
     //transparent all background
     document.getElementById('donate-btn').classList.add('bg-transparent');
     document.getElementById('history-btn').classList.add('bg-transparent');
@@ -19,7 +19,7 @@ function changeBottonColorById(id){
     document.getElementById(id).classList.remove('bg-transparent');
     document.getElementById(id).classList.add('bg-[#B4F461]');
 }
-// common function for show botton section
+// common function for show button section
 function showSectionById(id){
     // hidden all btn section
     document.getElementById('donation-list').classList.add('hidden');
@@ -42,12 +42,16 @@ function processDonation(accountBalanceID, inputMoneyID, donateAmountID, modalID
             // Add the donation amount to the current balance
             const newBalance = balanceNum + addMoney; 
             document.getElementById(donateAmountID).innerText = newBalance;
-
             // Deduct the added amount from the account balance
             const newAccountBalance = accountBalance - addMoney;
             document.getElementById(accountBalanceID).innerText = newAccountBalance;
             // Open Modal
             modal.showModal();
+            // close Modal
+            modal.addEventListener('close', function() {
+                // Clear the input
+                document.getElementById(inputMoneyID).value = ''; 
+            });
             // History update section
             const div = document.createElement('div');
             div.classList.add('container', 'mx-auto', 'border-2', 'p-8', 'gap-8', 'rounded-lg', 'mb-8')
@@ -60,5 +64,6 @@ function processDonation(accountBalanceID, inputMoneyID, donateAmountID, modalID
         }
     } else {
         alert("Invalid Input: Please enter a valid number");
-    }
+    }   
 }
+
