@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/147de7fead.js" crossorigin="anonymous"></script>
+    <style>
+        .fonts-family{
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+<body class="fonts-family">
+    <!-- nav section start -->
+    <nav class="bg-gray-200 py-6 h-32">
+        <div class="container px-4 mx-auto h-24 flex justify-between">
+            <!-- Blog botton -->
+            <div class="btn w-24 h-12 bg-[#B4F461] border-0 px-8 py-3 font-semibold text-xl"><a href="./index.html">Home</a></div>
+            <!-- Logo donate Bangladesh -->
+            <div class="flex gap-2 lg:gap-4 h-12">
+                <!-- logo image -->
+                <img class="w-12 h-12 border-2 border-dashed border-gray-300 " src="./images/logo.png" alt="Logo donate Bangladesh">
+                <!-- logo text -->
+                <h1 class="text-base lg:text-xl font-semibold  text-center content-center">Donate Bangladesh</h1>
+            </div>
+            <!-- account balance -->
+            <div class="flex gap-2 lg:gap-4 h-7 justify-center items-center mt-3">
+                <img src="./images/coin.png" alt="coin image">
+                <h2 id="account-balance" class="text-base lg:text-xl font-medium">5500 BDT</h2>
+            </div>
+        </div>        
+    </nav>
+    <!-- nav section End -->
+    <!-- FAQ section start -->
+     <h1 class="container mx-auto font-bold text-3xl mt-10">
+        Important FAQ <i class="fa-regular fa-circle-question text-4xl"></i>
+     </h1>
+     <div class="container mx-auto">
+        <div class="collapse collapse-arrow border-2 mt-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM) ?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a structured representation of an HTML document, enabling dynamic manipulation and interaction with elements using programming languages like JavaScript.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mt-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from DOM ?</div>
+            <div class="collapse-content">
+              <p>You can select an element from the DOM using methods like document.getElementById(), document.querySelector(), document.getElementsByClassName(), or document.getElementsByTagName().</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mt-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What an event delegation in the context of the DOM, and why is it useful ?</div>
+            <div class="collapse-content">
+              <p>Event delegation attaches a single event listener to a parent element, handling events from its child elements using event bubbling. It's useful for improved performance, fewer listeners, and managing dynamically added elements without needing to reassign event handlers.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mt-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How to function work ?</div>
+            <div class="collapse-content">
+              <p>A function is a reusable block of code that performs a specific task. It can take inputs (parameters) and return an output or result.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mt-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How to make a common function ?</div>
+            <div class="collapse-content">
+              <p>A common function is reusable code that performs a task, takes inputs (parameters), and returns output. Define it once and call it multiple times</p>
+            </div>
+          </div>
+     </div>
+    <!-- FAQ section End -->
+</body>
+</html>
